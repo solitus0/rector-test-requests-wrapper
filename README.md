@@ -4,7 +4,7 @@
 ```json
 {
   "type": "vcs",
-  "url": "git@gitlab.ito.lt:ito-backend/rector-phpunit-withconsecutive.git"
+  "url": "git@github.com:solitus0/rector-test-requests-wrapper.git"
 }
 ```
 ### Install package
@@ -12,17 +12,17 @@
 composer require --dev solitus0/rector-test-requests-wrapper
 ```
 
-# Rector rules for deprecated withConsecutive method
+# Rector usage:
 
 ```php
     $rectorConfig->sets(
         [
-            AppSetsList::TEST_REQUESTS_WRAPPER,
+            AppRequestsSetsList::TEST_REQUESTS_WRAPPER,
         ]
     );
 ```
 
-# Copy Trait:
+# Copy Class:
 ```php
 <?php
 
